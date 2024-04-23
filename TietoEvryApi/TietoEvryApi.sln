@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TietoEvryApi", "TietoEvryApi\TietoEvryApi.csproj", "{0080028A-F8CC-48AE-B77F-95DE1D66EA82}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TietoEvry.Data", "TietoEvry.Data\TietoEvry.Data.csproj", "{4E4E1794-D781-464A-A583-471C93BA61AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TietoEvry.Core", "TietoEvry.Core\TietoEvry.Core.csproj", "{6C79B116-5FFD-4B6C-BFA1-DF7CA32026DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,6 +16,14 @@ Global
 		{0080028A-F8CC-48AE-B77F-95DE1D66EA82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0080028A-F8CC-48AE-B77F-95DE1D66EA82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0080028A-F8CC-48AE-B77F-95DE1D66EA82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E4E1794-D781-464A-A583-471C93BA61AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E4E1794-D781-464A-A583-471C93BA61AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E4E1794-D781-464A-A583-471C93BA61AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E4E1794-D781-464A-A583-471C93BA61AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C79B116-5FFD-4B6C-BFA1-DF7CA32026DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C79B116-5FFD-4B6C-BFA1-DF7CA32026DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C79B116-5FFD-4B6C-BFA1-DF7CA32026DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C79B116-5FFD-4B6C-BFA1-DF7CA32026DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
