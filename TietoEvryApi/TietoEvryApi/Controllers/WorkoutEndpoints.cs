@@ -1,11 +1,8 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Routing;
 using TietoEvry.Core.Workouts.Dtos;
 using TietoEvry.Core.Workouts.Services.Interfaces;
 
-namespace TietoEvry.Core.Workouts;
+namespace TietoEvryApi.Controllers;
 
 public static class WorkoutEndpoints
 {

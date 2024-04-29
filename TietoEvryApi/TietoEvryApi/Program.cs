@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using TietoEvry.Core;
 using TietoEvry.Data.Contexts;
+using TietoEvryApi.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,9 +14,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ApplicationDbContext>(opt => opt.UseInMemoryDatabase("TietoEvryDB"));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddAutoMapper(typeof(Program).Assembly,
-    typeof(TietoEvry.Core.Workouts.AutoMapperProfiles.WorkoutsProfile).Assembly,
-    typeof(TietoEvry.Core.Exercises.AutoMapperProfiles.WorkoutsProfile).Assembly);
+builder.Services.AddAutoMapper(typeof(Program).Assembly, typeof(TietoEvry.Core.ServiceCollectionExtension).Assembly);
 
 builder.Services.AddServices();
 

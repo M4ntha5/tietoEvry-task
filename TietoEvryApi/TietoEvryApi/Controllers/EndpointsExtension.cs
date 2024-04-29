@@ -1,8 +1,4 @@
-using Microsoft.AspNetCore.Routing;
-using TietoEvry.Core.Exercises;
-using TietoEvry.Core.Workouts;
-
-namespace TietoEvry.Core;
+namespace TietoEvryApi.Controllers;
 
 public static class EndpointsExtension
 {
