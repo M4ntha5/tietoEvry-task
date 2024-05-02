@@ -5,10 +5,6 @@ namespace TietoEvry.Data.Contexts;
 
 public class ApplicationDbContext : DbContext
 {
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
-    {
-    }
-    
-    public DbSet<Exercise> Exercises => Set<Exercise>();
-    public DbSet<Workout> Workouts => Set<Workout>();
+    public virtual DbSet<Exercise> Exercises => Set<Exercise>();
+    public virtual DbSet<Workout> Workouts => Set<Workout>();
 }

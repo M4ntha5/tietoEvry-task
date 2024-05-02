@@ -1,13 +1,12 @@
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using TietoEvry.Core.Workouts.AutoMapperProfiles;
 using TietoEvry.Core.Workouts.Services;
 using TietoEvry.Core.Workouts.Services.Interfaces;
 using TietoEvry.Data.Contexts;
 using TietoEvry.Data.Models;
 
-namespace TietoEvry.Tests;
+namespace TietoEvry.Tests.Integration;
 
 public class WorkoutsServiceTests
 {
@@ -26,7 +25,7 @@ public class WorkoutsServiceTests
         var serviceProvider = serviceCollection.BuildServiceProvider(); 
         
         _applicationDbContext = serviceProvider.GetRequiredService<ApplicationDbContext>();
-        var mapper = new MapperConfiguration(m => { m.AddProfile<WorkoutsProfile>(); });
+        var mapper = new MapperConfiguration(m => { });
         
         _workoutService = new WorkoutService(_applicationDbContext, mapper.CreateMapper());
     }
